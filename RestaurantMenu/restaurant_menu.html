@@ -5,141 +5,178 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
         <title>Trattoria Della Nonna</title>
         <style>
-            * {
-              text-align: center;    
+            body {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;   
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            hr {
+                width: 99%;
+                border-top: 3px dotted red;
+            }
+            h2 {
+                color: green;
+            }
+            h3 {
+                color: green;
+            }
+            p {
+                padding-bottom: 10px;
             }
             ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
             }
             li {
-              display: inline;
+                display: inline;
+                margin: 10px;
             }
             .container {
                 margin: auto;
-                width: 500px;
-                height: 350px;
+                width: 50%;
             }
             .container img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+            .sofia-regular {
+                font-family: "Sofia", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+
         </style>
     </head>
 
     <body>
 
-        <header>
+        <header style="background-color:black; padding:10px;">
             <img id="header-img"
-                 src="https://github.com/HenryLittle-2703/Codedex-HTML/blob/main/images/logo.JPG?raw=true"
-                 alt="Logo of restaurant: Trattoria Della Nonna.">
-            <h1>Trattoria Della Nonna</h1>
-            <nav>
+                 src="https://raw.githubusercontent.com/HenryLittle-2703/Codedex-HTML/refs/heads/main/images/new_logo.jpg"
+                 alt="Logo of restaurant: Trattoria Della Nonna."
+                 width="180">
+            <h1 class="sofia-regular"><span style="color:green">Trattoria</span> <span style="color:white">Della</span> <span style="color:red">Nonna</span></h1>
+            <nav style="color:white">
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#menu"><b>MENU</b></a></li>
+                    <li><a href="#order-form"><b>ORDER NOW</b></a></li>
                 </ul>
             </nav>
         </header>
         <hr>
         <main>
-            <section id="Menu">
-                <h2>Lunch Combo Menu</h2>
-                <p>Includes one appetizer, one main dish, and one dessert</p>
+            <section id="menu">
+                <h2>Combo Menu</h2>
+                <p>Includes one appetizer, one main dish, and one dessert. <i>$25</i></p>
+                <hr>
                 <section>
                     <h3>Appetizer Options</h3>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                             <img src="https://mycrazygoodlife.com/wp-content/uploads/2022/06/instant-pot-vegan-minestrone-soup-featured.jpg"
                                  alt="Minestrone soup served with side of bread.">
-                        </div>
+                        </figure>
                         <h4>Classic Minestrone Soup</h4>
-                        <p><i>Hearty soup made with fresh beans, onions, celery, carrots, tomatoes, and pasta.</i></p>
+                        <p>Hearty soup made with fresh beans, onions, celery, carrots, tomatoes, and pasta. <i>$8</i></p>
                     </article>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                             <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2003/9/22/0/tm1a35_caprese_salad.jpg.rend.hgtvcom.1280.720.suffix/1530799984231.webp"
                                  alt="Caprese salad made out of tomatoes, mozzarella cheese, and fresh basil.">
-                        </div>
+                        </figure>
                         <h4>Caprese Salad</h4>
-                        <p><i>Sliced fresh mozzarella, tomatoes, and sweet basil, seasoned with salt and olive oil.</i></p>
+                        <p>Sliced fresh mozzarella, tomatoes, and sweet basil, seasoned with salt and olive oil. <i>$9</i></p>
                     </article>
                     <article>
-                        <div class="container">
-                            <img src="https://www.sugarsaltmagic.com/wp-content/uploads/2021/11/Focaccia-Di-Recco-Alla-Formaggio-B-FB.jpg"
+                        <figure class="container">
+                            <img src="https://www.sugarsaltmagic.com/wp-content/uploads/2021/11/Focaccia-Di-Recco-Alla-Formaggio-B-3FEAT-500x375.jpg"
                                  alt="Flatbread stuffed with cheese.">
-                        </div>
+                        </figure>
                         <h4>Focaccia di Recco</h4>
-                        <p><i>Flat-bread stuffed with cheese</i></p>
+                        <p>Flat-bread stuffed with cheese. <i>$6</i></p>
                     </article>
+                    <br>
                 </section>
+                <hr>
                 <section>
                     <h3>Main Dish Options</h3>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                         <img src="https://www.marcellinaincucina.com/wp-content/uploads/2023/02/gnocchi-alla-sorrentina-closeup.jpg"
                              alt="Potato gnocchi with tomato sauce and cheese being held with a fork.">
-                        </div>
+                        </figure>
                         <h4>Gnocchi alla Sorrentina</h4>
-                        <p><i>Soft potato gnocchi baked in tomate sauce with mozzarella and fresh basil.</i></p>
+                        <p>Soft potato gnocchi baked in tomate sauce with mozzarella and fresh basil. <i>$15</i></p>
                     </article>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                         <img src="https://houseofnasheats.com/wp-content/uploads/2023/06/Chicken-Parmesan-Recipe-2-500x375.jpg"
                              alt="Chicken with mozzarella and tomato sauce over pasta.">
-                        </div>
+                        </figure>
                         <h4>Chicken Parmigiana</h4>
-                        <p><i>Breaded chicken breast covered in tomato sauce and mozzarella. Accompanied with a side of linguini.</i></p>
+                        <p>Breaded chicken breast covered in tomato sauce and mozzarella. Accompanied with a side of linguini. <i>$16</i></p>
                     </article>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                         <img src="https://www.spoonforkbacon.com/wp-content/uploads/2021/08/frutti-di-mare-recipe-card-500x375.jpg"
                              alt="Spaghetti with mussels, shrimp, scallops, and squid with spicy tomato sauce.">
-                        </div>
+                        </figure>
                         <h4>Frutti Di Mare</h4>
-                        <p><i>Made with mussels, shrimp, scallops, squid, spaghetti, and arrabiata sauce.</i></p>
+                        <p>Made with mussels, shrimp, scallops, squid, spaghetti, and arrabiata sauce.<i>$19</i></p>
                     </article>
+                    <br>
                 </section>
+                <hr>
                 <section>
                     <h3>Dessert Options</h3>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                         <img src="https://www.culinaryhill.com/wp-content/uploads/2021/01/Tiramisu-Culinary-Hill-1200x800-1.jpg"
                              alt="Tiramisu served on a plate and fork.">
-                        </div>
+                        </figure>
                         <h4>Tiramisu</h4>
-                        <p><i>Ladyfinger pastries dipped in coffee, layered with whipped mascarpone, and flavoured with cocoa.</i>></p>
+                        <p>Ladyfinger pastries dipped in coffee, layered with whipped mascarpone, and flavoured with cocoa. <i>$7</i>></p>
                     </article>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                         <img src="https://fillofactory.com/wp-content/uploads/2022/06/cannoli-800x530.jpg"
                              alt="Cannoli filled with ricotta and chocolate chips.">
-                        </div>
+                        </figure>
                         <h4>Cannoli</h4>
-                        <p><i>Fried pastry dough shell, filled with a mixture of sugar, ricotta cheese, and chocolate chips. Dusted with powdered sugar.</i></p>
+                        <p>Fried pastry dough shell, filled with a mixture of sugar, ricotta cheese, and chocolate chips. Dusted with powdered sugar. <i>$6</i></p>
                     </article>
                     <article>
-                        <div class="container">
+                        <figure class="container">
                         <img src="https://www.lucake.it/wp-content/uploads/2022/09/torta-della-nonna.jpg"
                              alt="Cake with lemon crust and filled with vanilla pastry cream.">
-                        </div>
+                        </figure>
                         <h4>Torta Della Nonna</h4>
-                        <p><i>Lemon flavored sweet shortcrust pastry filled with vanilla pastry cream. Topped with pine nuts.</i></p>
+                        <p>Lemon flavored sweet shortcrust pastry filled with vanilla pastry cream. Topped with pine nuts. <i>$8</i></p>
                     </article>
+                    <br>
                 </section>
             </section>
             <hr>
-            <section id="order">
+            <section id="order-form">
                 <h2>Place Your Order</h2>
             </section>
         </main>
 
         <footer>
-            <p>Made with Love by</p>
+            <ul>
+                <li>Made with love by HenryLittle</li>
+                <li><a href="https://github.com/HenryLittle-2703/" target="_blank" style="color:black;">GitHub</a></li>
+              </ul> 
         </footer>
 
     </body>
