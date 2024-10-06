@@ -42,7 +42,7 @@
             }
             .container {
                 margin: auto;
-                width: 50%;
+                max-width: 60%;
             }
             .container img {
                 width: 100%;
@@ -54,17 +54,26 @@
                 font-weight: 400;
                 font-style: normal;
             }
-
+            .custom-select {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            input[type=submit]{
+                background-color: green;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
         </style>
     </head>
 
     <body>
 
-        <header style="background-color:black; padding:10px;">
+        <header style="background-color:black; padding:20px;">
             <img id="header-img"
-                 src="https://raw.githubusercontent.com/HenryLittle-2703/Codedex-HTML/refs/heads/main/images/new_logo.jpg"
-                 alt="Logo of restaurant: Trattoria Della Nonna."
-                 width="180">
+                 src="https://raw.githubusercontent.com/HenryLittle-2703/Codedex-HTML/refs/heads/main/images/grandma_logo.jpg"
+                 alt="Logo of restaurant Trattoria Della Nonna."
+                 width="100">
             <h1 class="sofia-regular"><span style="color:green">Trattoria</span> <span style="color:white">Della</span> <span style="color:red">Nonna</span></h1>
             <nav style="color:white">
                 <ul>
@@ -132,7 +141,7 @@
                              alt="Spaghetti with mussels, shrimp, scallops, and squid with spicy tomato sauce.">
                         </figure>
                         <h4>Frutti Di Mare</h4>
-                        <p>Made with mussels, shrimp, scallops, squid, spaghetti, and arrabiata sauce.<i>$19</i></p>
+                        <p>Made with mussels, shrimp, scallops, squid, spaghetti, and arrabiata sauce. <i>$19</i></p>
                     </article>
                     <br>
                 </section>
@@ -145,7 +154,7 @@
                              alt="Tiramisu served on a plate and fork.">
                         </figure>
                         <h4>Tiramisu</h4>
-                        <p>Ladyfinger pastries dipped in coffee, layered with whipped mascarpone, and flavoured with cocoa. <i>$7</i>></p>
+                        <p>Ladyfinger pastries dipped in coffee, layered with whipped mascarpone, and flavoured with cocoa. <i>$7</i></p>
                     </article>
                     <article>
                         <figure class="container">
@@ -167,8 +176,91 @@
                 </section>
             </section>
             <hr>
-            <section id="order-form">
+            <section id="order-form" style="border:2px solid lightgrey; width:fit-content; margin:auto; padding-bottom:15px; padding-left:15px; padding-right:15px;">
                 <h2>Place Your Order</h2>
+                <hr>
+                <form>
+                    <p style="padding: 0; margin: 0; display: inline;">Combo Menu</p>
+                    <input type="radio" name="combo" id="combo_yes" required>
+                    <label for="combo_yes">Yes</label>
+                    <input type="radio" name="combo" id="combo_no">
+                    <label for="combo_no">No</label>
+                    <br>
+                    <label for="appetizers">Appetizer: </label>
+                    <select name="appetizer" id="appetizers">
+                        <option value="">Select One</option>
+                        <option value="minestrone">Classic Minestrone Soup</option>
+                        <option value="caprese">Caprese Salad</option>
+                        <option value="focaccia">Focaccia di Recco</option>
+                    </select>
+                    <br>
+                    <label for="main_dishes">Main Dish: </label>
+                    <select name="main_dish" id="main_dishes">
+                        <option value="">Select One</option>
+                        <option value="gnocchi">Gnocchi alla Sorrentina</option>
+                        <option value="chicken">Chicken Parmigiana</option>
+                        <option value="frutti">Frutti Di Mare</option>
+                    </select>
+                    <br>
+                    <label for="desserts">Dessert: </label>
+                    <select class="custom-select" name="dessert" id="desserts">
+                        <option value="">Select One</option>
+                        <option value="tiramisu">Tiramisu</option>
+                        <option value="cannoli">Cannoli</option>
+                        <option value="torta">Torta Della Nonna</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <p style="padding: 0; margin: 0; display: inline;">Individual Items</p>
+                    <input type="radio" name="singles" id="singles_yes" required>
+                    <label for="singles_yes">Yes</label>
+                    <input type="radio" name="singles" id="singles_no">
+                    <label for="singles_no">No</label>
+                    <br>
+                    <label for="soup">Classic Minestrone Soup</label>
+                    <input type="number" min="0" max="10" value="0" id="soup">
+                    <br>
+                    <label for="salad">Caprese Salad</label>
+                    <input type="number" min="0" max="10" value="0" id="salad">
+                    <br>
+                    <label for="recco">Focaccia di Recco</label>
+                    <input type="number" min="0" max="10" value="0" id="recco">
+                    <br>
+                    <label for="gnocchi">Gnocchi alla Sorrentina</label>
+                    <input type="number" min="0" max="10" value="0" id="gnocchi">
+                    <br>
+                    <label for="chicken">Chicken Parmigiana</label>
+                    <input type="number" min="0" max="10" value="0" id="chicken">
+                    <br>
+                    <label for="frutti">Frutti Di Mare</label>
+                    <input type="number" min="0" max="10" value="0" id="frutti">
+                    <br>
+                    <label for="tiramisu">Tiramisu</label>
+                    <input type="number" min="0" max="10" value="0" id="tiramisu">
+                    <br>
+                    <label for="cannoli">Cannoli</label>
+                    <input type="number" min="0" max="10" value="0" id="cannoli">
+                    <br>
+                    <label for="torta">Torta Della Nonna</label>
+                    <input type="number" min="0" max="10" value="0" id="torta">
+                    <br>
+                    <hr>
+                    <p style="padding: 0; margin: 0;">Add-ons</p>
+                    <input type="checkbox" name="breadsticks" id="bread">
+                    <label for="bread">Breadsticks</label>
+                    <input type="checkbox" name="parmesan_cheese" id="parmesan">
+                    <label for="parmesan">Grated Parmesan Cheese</label>
+                    <input type="checkbox" name="silverware" id="utensils">
+                    <label for="utensils">Utensils</label>
+                    <br>
+                    <br>
+                    <label for="comments">Special Requests:</label>
+                    <br>
+                    <textarea id="comments" rows="5" cols="40" maxlength="250">Enter additional instructions here.</textarea>
+                    <br>
+                    <hr>
+                    <input type="submit" value="Go To Checkout">
+                </form>
             </section>
         </main>
 
